@@ -1,8 +1,8 @@
 export const aboutString = `
     <div>
-      <header style="background-color: #333; color: #fff; text-align: center; padding: 1em 0;">
-        <h1>Our Garment Company</h1>
-        <p>Where Style Meets Sustainability</p>
+      <header className="bg-green-500 mt-4 p-2 mx-auto text-center text-gray-100 ">
+        <h1 className="uppercase text-lg font-bold">Our Garment Company</h1>
+        <p className="italic">Where Style Meets Sustainability</p>
       </header>
       <br>
       <section style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); margin-top: 20px;">
