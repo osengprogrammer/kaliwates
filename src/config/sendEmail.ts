@@ -1,10 +1,10 @@
 /* trunk-ignore-all(prettier) */
 "use server";
 import { NextApiResponse } from "next";
-import { ContactType } from "@/components/ContactForm"; // Adjust the path accordingly
+import { ContactType } from "@/components/Contact/ContactForm"; // Adjust the path accordingly
 import { ReactNode } from "react"; // Import ReactNode
 import { Resend } from "resend";
-import { welcomeEmail } from "@/components/email-temaplate";
+import { welcomeEmail } from "@/components/Contact/email-temaplate";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 

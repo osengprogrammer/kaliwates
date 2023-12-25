@@ -1,4 +1,4 @@
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/Contact/ContactForm";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import React from "react";
 
