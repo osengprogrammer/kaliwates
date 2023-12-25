@@ -9,6 +9,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
+import NavigationBar from "./NavigationBar"
+
 import { AlignJustify } from "lucide-react";
 import Link from "next/link";
 import { ListMenu } from "@/constant";
@@ -24,7 +26,8 @@ function ActionButton() {
           <SheetHeader>
             {/* <SheetTitle>Are you sure absolutely sure?</SheetTitle> */}
             <SheetDescription>
-              <div className="flex flex-col space-y-4 w-full text-lg text-black mt-10">
+              <NavigationBar/>
+              {/* <div className="flex flex-col space-y-4 w-full text-lg text-black mt-10">
               {ListMenu.map((component) => (
                 
                 <Link 
@@ -40,7 +43,7 @@ function ActionButton() {
               
               ))}
            
-               </div>
+               </div> */}
             </SheetDescription>
           </SheetHeader>
         </SheetContent>

@@ -15,7 +15,7 @@ function HeroSection() {
         team to ensure our highest quality standards.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 mt-6">
-        <Link href="/services" className={buttonVariants()}>
+        <Link href="/service-summary" className={buttonVariants()}>
           Browse Our Services
         </Link>
         <Link href="/quality-services">

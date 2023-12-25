@@ -15,7 +15,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { ListGalery, ListMenu } from "@/constant"
+import { CompanyProfile, ListGalery, ListMenu, OurService } from "@/constant"
 import { Button } from "../ui/button"
 
 const components: { title: string; href: string; description: string }[] = [
@@ -53,14 +53,14 @@ const components: { title: string; href: string; description: string }[] = [
 
 export default function NavigationBar() {
   return (
-    <NavigationMenu className="hidden md:block">
-      <NavigationMenuList>
+    <NavigationMenu >
+      <NavigationMenuList className="flex flex-col items-start justify-around">
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Get Started</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Company Profile</NavigationMenuTrigger>
           <NavigationMenuContent>
           <NavbarLogo/>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {ListMenu.map((component) => (
+              {CompanyProfile.map((component) => (
                 <ListItem
                   key={component.title}
                   title={component.title}
@@ -70,6 +70,23 @@ export default function NavigationBar() {
                   {component.description}
                   
                  
+                </ListItem>
+              ))}
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Our Services</NavigationMenuTrigger>
+          <NavigationMenuContent>
+          <NavbarLogo/>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              {OurService.map((component) => (
+                <ListItem
+                  key={component.title}
+                  title={component.title}
+                  href={component.href}
+                >
+                  {component.description}
                 </ListItem>
               ))}
             </ul>
