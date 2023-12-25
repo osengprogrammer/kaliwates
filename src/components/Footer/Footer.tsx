@@ -18,7 +18,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-
+        {/* test */}
         {/* Social Media */}
         <div className="w-full md:w-1/2 mb-6 md:mb-0">
           <h4 className="text-xl font-semibold mb-4">Connect With Us</h4>
