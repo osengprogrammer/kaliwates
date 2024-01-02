@@ -2,18 +2,11 @@
 
 export const CompanyProfile: { title: string; href: string; description: string }[] = [
   {
-    title: "About Us",
-    href: "/about",
+    title: "Contact Us",
+    href: "/contact",
     description:
     "Elevate your style with us! A leading garment company crafting quality, trendsetting apparel. Your fashion journey starts here.",
   },
-  {
-    title: "Our Team",
-    href: "/our-team",
-    description:
-    "Our team: a blend of professionalism, expertise, and experience. Each member is trained and skilled, ensuring excellence in garment craftsmanship.",
-  },
-
 ]
 
 export const OurService: { title: string; href: string; description: string }[] = [
@@ -49,26 +42,32 @@ export const OurService: { title: string; href: string; description: string }[] 
 export const ListMenu: { title: string; href: string; description: string }[] = [
     {
       title: "About Us",
-      href: "/about",
+      href: "/profile/about",
       description:
         "Our comitment is to deliver the best value products and the best services",
     },
     {
       title: "Service",
-      href: "/services",
+      href: "/profile/services",
       description:
         "We are coming from the value of helping our comunity training and providing them with the tailor skills",
     },
     
     {
       title: "Pricing",
-      href: "/pricing",
+      href: "/profile/pricing",
       description:
         "We are providing support 24/7",
     },
     {
-        title: "Contact Us",
-        href: "/contact",
+        title: "Our Team",
+        href: "/profile/ourteam",
+        description:
+          "We are providing support 24/7",
+      },
+      {
+        title: "qualityandservices",
+        href: "/profile/qualityandservices",
         description:
           "We are providing support 24/7",
       }

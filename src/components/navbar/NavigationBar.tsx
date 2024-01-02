@@ -15,52 +15,20 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import { CompanyProfile, ListGalery, ListMenu, OurService } from "@/constant"
+import { ListGalery, ListMenu, OurService } from "@/constant"
 import { Button } from "../ui/button"
 
-const components: { title: string; href: string; description: string }[] = [
-  {
-    title: "services",
-    href: "/services",
-    description:
-      "Our comitment is to deliver the best value products and the best services",
-  },
-  {
-    title: "About Us",
-    href: "/about",
-    description:
-      "We are coming from the value of helping our comunity training and providing them with the tailor skills",
-  },
-  {
-    title: "Contact Us",
-    href: "/contact",
-    description:
-      "We are providing support 24/7",
-  },
-  {
-    title: "Galery Video",
-    href: "/galer-videos",
-    description: "",
-  },
-  {
-    title: "Galery Picture",
-    href: "/galey-pictures",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
- 
-]
 
 export default function NavigationBar() {
   return (
     <NavigationMenu >
-      <NavigationMenuList className="flex flex-col items-start justify-around">
+      <NavigationMenuList className="flex  items-start justify-around">
         <NavigationMenuItem>
           <NavigationMenuTrigger>Company Profile</NavigationMenuTrigger>
           <NavigationMenuContent>
           <NavbarLogo/>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {CompanyProfile.map((component) => (
+              {ListMenu.map((component) => (
                 <ListItem
                   key={component.title}
                   title={component.title}

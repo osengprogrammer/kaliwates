@@ -1,0 +1,47 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model DBOne {
+  id           String  @id @default(auto()) @map("_id") @db.ObjectId
+  CODE         String
+  CODE_FABRIC  String
+  CODE_LINING  String?
+  COLOR        String
+  CUSTOMER     String
+  FABRIC_COLOR String
+  /// Multiple data types found: Float: 71.6%, Int: 28.4% out of 422 sampled entries
+  FABRIC_QTY   Json?
+  /// Multiple data types found: Float: 21.6%, Int: 78.4% out of 412 sampled entries
+  LINING_QTY   Json?
+  PRICE        Int?
+  PRODUCT      String
+  SIZE         String
+}
+
+model DELIVERY {
+  id      String @id @default(auto()) @map("_id") @db.ObjectId
+  po      Int
+  po_date String
+  po_id   String
+  prod_id String
+  qty     Int
+}
+
+model PO {
+  id      String @id @default(auto()) @map("_id") @db.ObjectId
+  po      Int
+  po_date String
+  po_id   String
+  prod_id String
+  qty     Int
+}
+
+model profile {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+}
