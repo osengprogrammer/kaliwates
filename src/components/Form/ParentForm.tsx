@@ -25,7 +25,7 @@ const ParentComponent = () => {
     gender: z.string().optional(),
   });
 
-  const onSubmit = (data) => {
+  const onSubmit = (data:any) => {
     console.log('Form data submitted from ParentComponent:', data);
     // Handle form submission logic here
   };
