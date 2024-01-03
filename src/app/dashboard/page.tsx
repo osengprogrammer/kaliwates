@@ -10,15 +10,9 @@ import fetchDB from "@/action/fetchDbOne";
 
 
 async function page() {
-
- 
-
-  const voters = await fetchVoter()
+  // const voters = await fetchVoter()
   const DBONE = await fetchDB()
   // console.log(DBONE)
-  // console.log(voters)
-
-
   // console.log(voters)
  
 
