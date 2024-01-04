@@ -1,5 +1,5 @@
 
-import {fetchVoter } from "@/action/fetchingAction";
+import {fetchVoter, getDatabase } from "@/action/fetchingAction";
 import Accordion from "@/components/Accordion/Accordion";
 import { DataTable } from "@/components/DataTable/DataTable";
 // import PageContentForm from "@/components/Form/PageContent";
@@ -15,7 +15,9 @@ async function page() {
   console.log("ok")
   // console.log(DBONE)
   // console.log(voters)
- 
+
+const database =  await getDatabase()
+// console.log(database)
 
   return (
     <div>
@@ -23,7 +25,7 @@ async function page() {
       {/* <PageContentForm /> */}
       {/* <ParentComponent/> */}
      
-      {/* <DataTable columns={columns} data={DBONE} /> */}
+      <DataTable columns={columns} data={database} />
       </div>
   );
 }
