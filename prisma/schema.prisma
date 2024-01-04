@@ -7,7 +7,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model DBOne {
+model database {
   id           String  @id @default(auto()) @map("_id") @db.ObjectId
   CODE         String
   CODE_FABRIC  String
@@ -24,7 +24,7 @@ model DBOne {
   SIZE         String
 }
 
-model DELIVERY {
+model delivery {
   id      String @id @default(auto()) @map("_id") @db.ObjectId
   po      Int
   po_date String
@@ -33,7 +33,7 @@ model DELIVERY {
   qty     Int
 }
 
-model PO {
+model po {
   id      String @id @default(auto()) @map("_id") @db.ObjectId
   po      Int
   po_date String

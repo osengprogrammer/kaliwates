@@ -11,7 +11,7 @@ import fetchDB from "@/action/fetchDbOne";
 
 async function page() {
   // const voters = await fetchVoter()
-  const DBONE = await fetchDB()
+  // const DBONE = await fetchDB()
   console.log("ok")
   // console.log(DBONE)
   // console.log(voters)
@@ -23,7 +23,7 @@ async function page() {
       {/* <PageContentForm /> */}
       {/* <ParentComponent/> */}
      
-      <DataTable columns={columns} data={DBONE} />
+      {/* <DataTable columns={columns} data={DBONE} /> */}
       </div>
   );
 }
