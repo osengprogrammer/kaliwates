@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    const posts = await prisma.database.findMany({});
+    const posts = await prisma.database.findMany();
 
     return NextResponse.json(posts);
   } catch (error) {
