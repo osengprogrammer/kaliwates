@@ -6,7 +6,9 @@ import { cn } from "@/lib/utils";
 import Navbar from "@/components/navbar/Navbar";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Footer from "@/components/Footer/Footer";
-import ThemeContextProvider from "@/context/ThemeContext";
+// import ThemeContextProvider from "@/context/ThemeContext";
+import { AppContextProvider } from "@/context/AppContext";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -25,13 +27,15 @@ export default function RootLayout({
         className={cn("relative h-full font-sans antialiased", inter.className)}
       >
         <main className="relative flex flex-col min-h-screen">
-          <ThemeContextProvider>
+          <AppContextProvider>
+            {/* <ThemeContextProvider> */}
             <MaxWidthWrapper>
               <Navbar />
               {children}
               <Footer />
             </MaxWidthWrapper>
-            </ThemeContextProvider>
+            {/* </ThemeContextProvider> */}
+          </AppContextProvider>
         </main>
       </body>
     </html>

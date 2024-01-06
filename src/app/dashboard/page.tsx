@@ -1,6 +1,5 @@
 
 import {fetchVoter, getDatabase } from "@/action/fetchingAction";
-import Accordion from "@/components/Accordion/Accordion";
 import { DataTable } from "@/components/DataTable/DataTable";
 // import PageContentForm from "@/components/Form/PageContent";
 // import ParentComponent from "@/components/Form/ParentForm";
@@ -21,7 +20,6 @@ const database =  await getDatabase()
 
   return (
     <div>
-      <Accordion />
       {/* <PageContentForm /> */}
       {/* <ParentComponent/> */}
      
